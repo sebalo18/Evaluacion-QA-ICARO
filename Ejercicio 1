@@ -1,0 +1,61 @@
+public class Calculadora {
+ 
+ public int sumar (int a, int b){
+    return a + b;
+ };
+ public int restar (int a, int b){
+    return a - b;
+ };
+ public int multiplicar (int a, int b){
+    return a*b;
+ };
+ public int dividir (int a, int b){
+    return a/b;
+ };
+}
+
+public class Main  {
+    public static  main {
+        Calculadora nuevaCalculadora = new Calculadora ();
+        Scanner nuevoScanner = new Scanner ();
+
+        for (int i = 0; i < 5; i+) {
+            System.out.print ("ingrese primer numero: ");
+            int primerNumero = scaner.nextInt();
+            System.out.print ("ingrese operador matemático (opciones válidas: +, -, *, / ): ");
+            String operadorMat = scaner.next();
+            System.out.print ("ingrese segundo numero: ");
+            int segundoNumero = scaner.nextInt();
+
+            int total = 0;
+
+
+            switch (operadorMat) {
+                case ("+"):
+                    total = calculadora.Sumar (primerNumero, segundoNumero);
+                    break;
+                case ("-"):
+                    total = calculadora.restar (primerNumero, segundoNumero);
+                    break;
+                case ("*"):
+                    total = calculadora.multiplicar (primerNumero, segundoNumero);
+                    break;
+                case ("/"):
+                    total = calculadora.dividir (primerNumero, segundoNumero);
+                    break;
+
+    
+        
+            }
+            if (total < 0) {
+                system.out.print ("Tené cuidado, el resultado es negativo!");
+            }    else if (total >= 0 && total =< 100000) {
+                system.out.print ("Resultado dentro de los límites.")
+            }   else {system.out.print("Error, resultado demasiado grande")}
+
+            }
+
+
+        }
+    }
+
