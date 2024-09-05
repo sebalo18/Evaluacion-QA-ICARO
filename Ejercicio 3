@@ -1,0 +1,84 @@
+public class Main Personaje {
+    private int Salud;
+
+    public Personaje(int salud){
+        this.salud = salud;
+    }
+
+    public int getSalud (){
+        return Salud;
+    }
+
+    public void setSalud (){
+        this.Salud =  Salud;
+    }
+
+    abstract public void Entrenar ();
+
+}
+
+public class Espadachin extends Personaje {
+    public int Ataque;
+
+    public Espadachin (int Salud, int Ataque) {
+        super(salud)
+        this.ataque = ataque;
+    }
+
+    public int getAtaque(){
+        return Ataque;
+    }
+
+    public void setAtaque() {
+        this.Ataque = ataque;
+    }
+
+
+
+    @Override
+    void Entrenar(){
+        this.ataque =+ 10;
+    }
+
+}
+
+public class Torre extends Personaje {
+    public int Nivel;
+
+    public Torre (int Salud, int Nivel) {
+        super(salud)
+        this.Nivel = Nivel;
+    }
+    public int getNivel(){
+        return Nivel;
+    }
+    public void setAtaque(){
+        this.Nivel = Nivel;
+    }
+
+    @Override
+    void Entrenar () {
+        this.Nivel =+ 1;
+    }
+}
+
+
+public class Mago extends Personaje {
+    public string magia;
+
+    public Magia (int salud, string magia){
+        super(salud)
+        this.magia = magia;
+    }
+
+    public int getMagia () {
+        return magia;
+    }
+
+    public void setMagia () {
+        this.magia = magia;
+    }
+
+    @Override
+    void Entrenar ();
+}
